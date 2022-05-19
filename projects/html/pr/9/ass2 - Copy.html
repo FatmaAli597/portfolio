@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>logo</title>
+    <meta charset="utf-8">
+    <meta name="description" content="loge page ">
+    <meta name="keywords" content="HTML,loge page">
+    <meta name="author" content="fatma">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+
+            margin: 10px 200px 10px 200px;
+            padding: 4px 40px 40px 40px;
+
+        }
+
+        header {
+            background-image: url("img/2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 2000px;
+            height: 600px;
+        }
+
+        nav {
+            background-color: rgba(185, 184, 184, 0.877);
+            border: 1px solid rgb(255, 252, 252);
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+
+        }
+
+        nav ul li {
+            padding: 5px;
+            margin: 10px;
+            float: left;
+
+        }
+
+        nav::after {
+            clear: both;
+        }
+
+
+        #sec{
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .col {
+            float: left;
+            width: 33.33%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+         form input{
+             display: block;
+             margin: 5px;
+             padding: 5px;
+         }
+
+       
+
+        .social_img {
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+
+        }
+
+
+        footer {
+            background-color: rgba(185, 184, 184, 0.877);
+            font-size: 20px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+    <div>
+
+        <nav>
+            <ul class="container">
+                <li><a href="#">home</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+        </nav>
+        <section class="row" id="sec">
+            <div class="col">
+                <div class=" fom">
+                    <form method="get" action="">
+                        <div>
+                            <label>user name</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>password</label>
+                            <input type="password">
+                        </div>
+                        <div>
+                        <input type="submit" value="save">
+                        </div>
+
+                    </form>
+                </div>
+                <hr>
+                <div>
+                    <p style="text-align: center;"> my social profile</p>
+                    <a href="https://www.facebook.com">
+                        <img src="img/fb.png" alt="facebook icon" class="social_img" >
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <img src="img/tr.png" alt="twitter icon" class="social_img">
+                    </a>
+                    <a href="https://www.google.com">
+                        <img src="img/google.jpg" alt="google icon" class="social_img">
+                    </a>
+                    <a href="https://www.linkedin.com">
+                        <img src="img/lin.png" alt="linkedin icon" class="social_img">
+                    </a>
+
+                </div>
+                <hr>
+                <div>
+
+                    <iframe src="https://www.w3schools.com"></iframe>
+                </div>
+
+            </div>
+            <div class="col">
+                <h1> my profile</h1>
+                <ul>
+                    <li>Age: 22 years</li>
+                    <li>Address: Minia _mallawi</li>
+                    <li>Phones: 01116355573</li>
+                    <li>Faculty of computers and information
+                        <a href="https://www.minia.edu.eg/Minia/">Minia University
+                        </a>
+                    </li>
+                    <li>Graduation year 2021</li>
+                    <li>
+                        Hobbies
+                        <ol>
+
+                            <li>Reading</li>
+                            <li>Photography</li>
+                            <li>Cooking</li>
+                        </ol>
+
+                    </li>
+
+                    <li id="contact"><a href="mailto:engzahra597@gmail.com">Send me Email</a></li>
+
+                </ul>
+            </div>
+            <div class="col">
+                <div>
+
+                    <img src="img/aa.jpg">
+                </div>
+                <div>
+                    <p>
+                        I'm web designer with 1+ month of experience.
+                        Eager to join Web House
+                        to bring top-class front end development ,back end development ,
+                        UX/UI, and visual design skills.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <footer>
+        <p class="container"> Copyrights &copy;
+            are reserved to ITI.
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table</title>
+        <meta charset="utf-8">
+        <style>
+            div
+            {
+                overflow:auto;
+            }
+            table
+            {
+                border: 4px solid black;
+                width: 800px;
+                height:600px;
+                margin: 20px 100px 100px 200px;
+
+                
+                
+                color: black;
+            }
+            tr, th
+             {
+               border: 1px solid black;
+               text-align: left;
+               padding: 2px;
+               margin: 2px;
+               margin-left: 100px;
+            }
+            th:hover
+            {
+                color: cadetblue;
+                
+
+            }
+            tr:nth-child(even) 
+            {
+            background-color: #f2f2f2;
+            }
+            caption
+            {
+              position: absolute;
+            }
+            input[type=text]
+            {
+              width: 100%;
+              height: 100%;
+              border: 1px solid #ccc;
+              padding: 0px 0px 0px 0px ;
+              
+              margin: 0px 0px 0px 0px;
+              
+            }
+            input[type=submit]
+            {
+              height: 40px;
+              width: 90px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              color: rgb(158, 201, 211);
+              background-color: rgb(16, 60, 97);
+              box-sizing: border-box;
+              text-align: center;
+              cursor: pointer;
+              text-decoration: none;
+              font-size: 16px;
+              
+            }
+            input[type=submit]:focus
+            {
+              color: #ccc;
+            }
+
+            button
+            {
+              height: 40px;
+              width: 90px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              color: rgb(158, 201, 211);
+              background-color: rgb(16, 60, 97);
+              box-sizing: border-box;
+              text-align:center; 
+              cursor: pointer;
+              text-decoration: none;
+              font-size: 16px;
+
+            }
+            button:hover
+            {
+              color: rgb(243, 235, 235);
+              box-shadow: 0 12px 12px 0 rgb(177, 215, 250) 0 18px 18px 0 rgb(23, 203, 235) 
+            }
+
+            input[type=radio]:focus
+            {
+              color: aquamarine;
+              border: 2px solid rgb(8, 4, 4);
+
+
+              
+            }
+            ul
+            {
+              list-style: square outside ;
+              
+            }
+            select
+            {
+              width: 100% ;
+              height: 100%;
+              padding: 0px 40px 0px 40px;
+              background-image: url("download8.png");
+              background-repeat: no-repeat;
+              background-size: 30px;
+              text-align: center;
+            }
+
+
+              
+          
+
+
+            
+            
+            
+            
+           
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <table>
+                <tr>
+                  <th colspan="2" style="text-align: center;margin: 0;padding: 0;"><strong>Contact Me</strong></th>
+                </tr>
+                <tr>
+                  <th>Your Name:</th>
+                  <th>
+                    <input type="text">
+                  </th>
+                </tr>
+                <tr>
+                  <th>Ur Opinion on Website:</th>
+                  <th>
+                      
+                        <input type="radio" id="Very Good" name="Very Good" value="Very Good">
+                        <label for="Very Good">Very Good</label><br>
+                        <input type="radio" id="Good" name="Very Good" value="Good">
+                        <label for="female">Good</label><br>
+                        <input type="radio" id="Fair" name="Very Good" value="Fair">
+                        <label for="other">Fair</label>
+                      
+                    </th>
+                  
+                </tr>
+                <tr>
+                    <th>Gender:</th>
+                    <th>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+    
+                    </th>
+                  </tr>
+                  <tr>
+                  <th>Marital Status:</th>
+                    <th>
+                        <select>
+                            <option>Other</option>
+                            <option> Married</option>
+                            <option>single</option>
+                        </select>
+                    
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>You Know About My Website From:</th>
+                    <th style="overflow-y:scroll;">
+                      
+                          <ul>
+                            <li> Internet</li>
+                            <li>Frindes </li>
+                            <li>Search engine</li>
+                            <li>other</li>
+                          </ul>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Mail:</th>
+                    <th>
+                      <input type="text">
+                    </th>
+                  </tr>
+                  
+                    <tr>
+                        <th>Subject:</th>
+                        <th>
+                          <input type="text">
+                        </th>
+                      </tr>
+                      
+                        <tr>
+                            <th>Your Massage:</th>
+                            <th>
+                              <input type="text" value="" name="">
+                            </th>
+                          </tr>
+                          
+                            <tr>
+                                <th colspan="2" style="text-align: center;"><input type="submit" > <button type="reset">Reset</button></th>
+                                
+                              </tr>
+                              
+                <caption style="text-align: center;"><h1>table_form</h1></caption>
+
+                  
+    
+                  
+              </table>
+        </div>
+        
+    </body>
+    
+</html>

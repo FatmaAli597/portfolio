@@ -1,0 +1,99 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        #div1 {
+            width: 350px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+    </style>
+    <script>
+        //https://www.w3schools.com/html/html5_draganddrop.asp
+        var draggedElementID;
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+
+            //ev.dataTransfer.setData("draggableID", ev.target.id);
+            draggedElementID = ev.target.id;
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+
+            //var data = ev.dataTransfer.getData("draggableID");
+            if (draggedElementID == "html5")
+                ev.target.appendChild(document.getElementById(draggedElementID));
+                document.getElementById("div1").style.backgroundColor="red";
+        }
+    </script>
+</head>
+
+<body>
+
+    <p>Drag the image into the rectangle:</p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        you can only drag Letter A Image
+    </div>
+    <br>
+    <img id="js" src="B.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+    
+    <img id="js" src="C.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+    <img id="html5" src="A.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<section>
+    <svg width="500px" height="500px">
+        <circle id="c1" cx="200" cy="200" r="50" fill="blue" stroke-width="10px" stroke="yellow"></circle>
+    </svg>
+
+    <script>
+        document.getElementById("c1").onclick = function() {
+            document.getElementById("c1").style.fill = "Red";
+        };
+        document.getElementById("c1").onmouseover = function() {
+            document.getElementById("c1").style.fill = "Red";
+        };
+        document.getElementById("c1").onmouseleave = function() {
+            document.getElementById("c1").style.fill = "blue";
+        };
+    </script>
+</section>
+<section>
+    <svg height="130" width="500">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+    
+            <stop offset="50%" style="stop-color:rgba(0,255,0,0.5)" />
+    
+            <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+          </linearGradient>
+        </defs>
+    
+        <ellipse id="c2" cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+    
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+    
+      </svg>
+      <script>
+        document.getElementById("c2").onclick = function() {
+            document.getElementById("c2").style.fill = "Red";
+        };
+        document.getElementById("c2").onmouseover = function() {
+            document.getElementById("c2").style.fill = "Red";
+        };
+        document.getElementById("c2").onmouseleave = function() {
+            document.getElementById("c2").style.fill = "blue";
+        };
+    </script>
+    
+</section>
+</body>
+
+</html>
